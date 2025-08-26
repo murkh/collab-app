@@ -1,0 +1,12 @@
+FROM golang:1.21-alphine as BUILDER
+WORKDIR /src
+COPY . .
+RUN apk add --no-cache git build-base
+RUN go build -o /out/server ./cmd/server
+
+FROM alphine:3.18
+COPY --from=BUILDER /out/server /usr/local/bin/server
+ENV POSTGRES_DSN=""
+ENV JWT_PRIVATE_KEY_PATH="/secrets/jwt_priv.pem"
+EXPOSE 8080
+CMD ["/usr/local/bin/server"]
