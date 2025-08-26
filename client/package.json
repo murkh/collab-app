@@ -10,8 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@hocuspocus/provider": "^3.2.3",
+    "codemirror": "^6.0.2",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-codemirror2": "^8.0.1",
+    "react-dom": "^19.1.1",
+    "y-codemirror": "^3.0.1",
+    "y-websocket": "^3.0.0",
+    "yjs": "^13.6.27"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",
