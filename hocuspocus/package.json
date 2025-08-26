@@ -1,0 +1,26 @@
+{
+  "name": "hocuspocus-server",
+  "version": "1.0.0",
+  "private": "true",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/server.ts",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hocuspocus/extension-database": "^3.2.3",
+    "@hocuspocus/extension-logger": "^3.2.3",
+    "@hocuspocus/extension-redis": "^3.2.3",
+    "@hocuspocus/server": "^3.2.3",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
